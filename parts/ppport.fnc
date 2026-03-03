@@ -71,8 +71,6 @@ AmnT|void|PL_ppaddr
 AmnT|void|PL_rsfp
 AmnT|void|PL_rsfp_filters
 AmnT|void|PL_signals
-AmnT|void|PL_stack_base
-AmnT|void|PL_stack_sp
 AmnT|void|PL_statcache
 AmnT|void|PL_stdingv
 AmnT|void|PL_sv_arenaroot
@@ -85,6 +83,7 @@ AmnT|void|SV_CONST_RETURN
 AmnT|void|SV_COW_SHARED_HASH_KEYS
 Am|void|sv_magic_portable|NN SV* sv|NULLOK SV* obj|int how|NULLOK const char* name|I32 namlen
 AmnT|void|SV_MUTABLE_RETURN
+AmnT|void|sv_pvn_nomg
 AmnT|void|UNLOCK_LC_NUMERIC_STANDARD
 AmnT|void|UVof
 AmnT|void|UVSIZE
