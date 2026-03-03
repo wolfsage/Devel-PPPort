@@ -731,8 +731,10 @@ is($fail, 0);
 ok(exists $p{utf8_distance});
 is($p{utf8_distance}, '5.6.0');
 
-ok(exists $p{save_generic_svref});
-is($p{save_generic_svref}, '5.005_03');
+# Testing something that's public and unsupported since 5.005_03. This might
+# change if embed.fnc marks apis internal suddenly
+ok(exists $p{SvTIED_obj});
+is($p{SvTIED_obj}, '5.005_03');
 
 ===============================================================================
 
